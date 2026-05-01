@@ -1,0 +1,301 @@
+/* Smooth scrolling when clicking navigation links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* general page styling */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #4a9c4d;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Different font styles for headings */
+h1, 
+h2, 
+h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+ 
+/* Section spacing */
+section {
+  padding: 20px;
+}
+
+/* Header styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #53a556;
+  color: #fff8e7;
+}
+
+/* Logo container */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+/* Logo image size */
+.logo-img {
+  width: 60px;
+  height: auto;
+}
+
+/* Cafe title styling */
+.logo h1 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #fff8e7;
+}
+
+/* Navigation layout */
+nav {
+  display: flex;
+  gap: 40px;
+}
+
+/* Navigation links styling */
+nav a {
+  color: #fff8e7;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Hover effects for navigation links */
+nav a:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+/* Hero section styling */
+.hero {
+  background: url("assets/images/hero.png") no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 15px;
+  padding-top: 30px;
+}
+
+/* Hero heading */
+.hero h2 {
+  margin: 0;
+  color: #333;
+}
+
+/* Button hover effect */
+.hero .btn:hover {
+  opacity: 0.8;
+}
+
+/* Button styling */
+.btn {
+  display: inline-block;
+  background: #4CAF50;
+  color: #fff8e7;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Section headings styling */
+#menu h2, 
+#about h2, 
+#sustainability h2, 
+#contact h2 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: #1f1f1f;
+  text-transform: uppercase;
+  margin: 30px 0;
+}
+
+/* Menu item layout */
+.menu-item {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+}
+
+/* Menu items images */
+.menu-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Name and price of the menu items */
+.name, 
+.price {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1f1f1f;
+}
+
+/* About and sustainability layout */
+.about-content, 
+.sustainability-content {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+/* About and sustainability images */
+.about-content img,
+.sustainability-content img {
+  width: 350px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Paragraph spacing */
+.about-text p, 
+.sustainability-text p {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* Contact section spacing */
+#contact {
+  padding: 40px 20px;
+}
+
+/* Contact box styling */
+.contact-box {
+  background: #d4e7d4;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  padding: 30px 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact info text layout */
+.contact-info p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Contact link styling */
+.contact-info a {
+  text-decoration: none;
+  color: green;
+}
+
+/* Hover effect for facebook link */
+.contact-info a:hover {
+  color: #1877f2;
+}
+
+/* Contact form layout */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+  align-items: center;
+}
+
+/* Form inputs and textarea */
+.contact-form input, 
+.contact-form textarea {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: inherit;
+  background: #f4f7f4;
+  color: #1f1f1f;
+}
+
+/* Textarea size */
+.contact-form textarea {
+  height: 100px;
+}
+
+/* Styling submit button */
+.contact-form button {
+  width: 40%;
+  padding: 10px;
+  background: #4caf50;
+  color: #fff8e7;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+/* Submit button hover effect */
+.contact-form button:hover {
+  opacity: 0.9;
+}
+
+/* Styling Map heading */
+.contact-box h3 {
+  margin: 30px auto 5px auto;
+  background-color: #4caf50;
+  color: #fff8e7;
+  width: fit-content;
+  padding: 5px 12px;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+/* Styling of Google Map */
+.contact-box iframe {
+  width: 72%;
+  height: 300px;
+  border: 0;
+  margin-top: 5px;
+  border-radius: 10px;
+}
+
+/* Footer styling */
+footer {
+  background-color: #3d8b41;
+  color: #fff8e7;
+  padding: 20px 20px;
+  text-align: center;
+}
+
+/* Footer text */
+.footer-content {
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+/* The position of the back to top button */
+footer .btn {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+
+/* Hover effect of the back to top button */
+footer .btn:hover {
+  opacity: 0.9;
+  color: white;
+}
+
+
+
